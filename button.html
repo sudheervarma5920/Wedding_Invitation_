@@ -7,66 +7,112 @@
     <link rel="icon" type="image/x-icon" href="Images/A.png">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #eee8d8;
-        }
+body {
+    background-color: #eee8d8 !important;
+    text-align: center !important;
+    font-family: 'Georgia', serif !important;
+}
 
-        button {
+.container {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #800000;
+    font-size: 32px;
+}
+
+.top-image {
+    width: 195px;
+    margin: 10px 0;
+}
+
+/* Styling for Buttons */
+button {
     width: 137px;
     height: 45px;
     border-radius: 25px !important;
     padding: 3px;
     background: #0b2f5b;
     border: 4px double #fff !important;
-    box-sizing: border-box;
     font-family: Times New Roman, Times, serif;
     color: #fff;
     font-size: 20px !important;
     cursor: pointer !important;
     margin-bottom: 15px !important;
 }
-        button:hover {
-    background-color: rgb(217 217 217);
+
+button:hover {
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    /* animation: fadeInScale 1.5s ease-in-out; */
     border: 4px double #0b2f5b !important;
     color: #0b2f5b;
 }
-.container {
-            text-align: center;
-        }
-        img {
-            width: 60%;
-            animation: fadeInMove 1.5s ease-in-out;
-        }
-        @keyframes fadeInMove {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            background-color: #007bff;
-            color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
-        }
-        button {
-            animation: fadeIn 1s ease-out;
-        }
+
+/* Image Animations */
+img {
+    animation: fadeInScale 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    margin: 180px 65px 20px 35px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile View: Arrange Button beside Image */
+@media (min-width: 350px) and (max-width: 900px) {
+    .custom-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-layout .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+    .custom-layout img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .custom-layout button {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .last {
+        margin-top: 20px;
+    }
+
+    .last img {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 <body>
