@@ -1,0 +1,97 @@
+/* General Page Styles */
+body {
+    background-color: #f8f1e4;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Contact Title */
+.contact-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: #800000;
+    margin-bottom: 20px;
+    animation: textFadeIn 2s ease-in-out;
+}
+
+/* Handshake Image */
+.handshake {
+    width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    animation: imageBounce 2s infinite alternate;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Contact Numbers */
+.contact-number {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: #800000;
+    margin: 5px 0;
+    animation: textFadeIn 2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes imageBounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Hover Effects */
+.handshake:hover {
+    transform: scale(1.05);
+}
+
+.contact-number:hover {
+    transform: scale(1.05);
+}

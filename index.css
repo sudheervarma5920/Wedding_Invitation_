@@ -1,0 +1,102 @@
+body {
+    background-color: #eee8d8 !important;
+    text-align: center !important;
+    font-family: 'Georgia', serif !important;
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #800000;
+    font-size: 32px;
+}
+
+.top-image {
+    width: 195px;
+    margin: 10px 0;
+}
+
+/* Styling for Buttons */
+button {
+    width: 137px;
+    height: 45px;
+    border-radius: 25px !important;
+    padding: 3px;
+    background: #0b2f5b;
+    border: 4px double #fff !important;
+    font-family: Times New Roman, Times, serif;
+    color: #fff;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    margin-bottom: 15px !important;
+}
+
+button:hover {
+    background-color: rgb(217, 217, 217);
+    border: 4px double #0b2f5b !important;
+    color: #0b2f5b;
+}
+
+/* Image Animations */
+img {
+    animation: fadeInScale 1.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile View: Arrange Button beside Image */
+@media (min-width: 350px) and (max-width: 900px) {
+    .custom-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-layout .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+    .custom-layout img {
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .custom-layout button {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .last {
+        margin-top: 20px;
+    }
+
+    .last img {
+        width: 100%;
+    }
+}

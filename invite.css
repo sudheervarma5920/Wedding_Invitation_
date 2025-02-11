@@ -1,0 +1,123 @@
+/* General Page Styles */
+body {
+    background-color: #fff8e1; /* Softer golden background */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 245, 230, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Top Images */
+.top-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.left-img, .right-img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+.left-img:hover, .right-img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Ganesha Image */
+.ganesha {
+    width: 90px;
+    margin: 15px auto;
+    display: block;
+    animation: glow 2s infinite alternate;
+}
+
+/* Invitation Title */
+.invite-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+    color: #b22222;
+    margin: 12px 0;
+    text-shadow: 2px 2px 5px rgba(178, 34, 34, 0.3);
+    animation: shimmer 3s infinite;
+}
+
+/* Subtext */
+.sub-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 25px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Names */
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #b22222;
+    margin: 12px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.name:hover {
+    transform: scale(1.1);
+    color: #800000;
+}
+
+/* Parent Details */
+.parent-text {
+    font-size: 18px;
+    color: #555;
+    margin: 6px 0;
+    font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shimmer {
+    0% { text-shadow: 2px 2px 5px rgba(178, 34, 34, 0.3); }
+    50% { text-shadow: 3px 3px 8px rgba(178, 34, 34, 0.5); }
+    100% { text-shadow: 2px 2px 5px rgba(178, 34, 34, 0.3); }
+}
+
+@keyframes glow {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(1.2);
+    }
+}

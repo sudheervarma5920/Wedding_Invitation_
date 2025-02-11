@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose</title>
+    <link rel="icon" type="image/x-icon" href="Images/A.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eee8d8;
+        }
+
+        button {
+    width: 137px;
+    height: 45px;
+    border-radius: 25px !important;
+    padding: 3px;
+    background: #0b2f5b;
+    border: 4px double #fff !important;
+    box-sizing: border-box;
+    font-family: Times New Roman, Times, serif;
+    color: #fff;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    margin-bottom: 15px !important;
+}
+        button:hover {
+    background-color: rgb(217 217 217);
+    border: 4px double #0b2f5b !important;
+    color: #0b2f5b;
+}
+.container {
+            text-align: center;
+        }
+        img {
+            width: 60%;
+            animation: fadeInMove 1.5s ease-in-out;
+        }
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        button {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Images/1.avif" alt="Wedding Image"><br><br>
+        <button onclick="location.href='snathakam.html'">Snathakam</button>
+        <button onclick="location.href='Invite.html'">Wedding</button>
+    </div>
+</body>
+</html>
